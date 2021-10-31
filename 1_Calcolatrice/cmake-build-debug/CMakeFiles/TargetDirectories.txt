@@ -1,0 +1,3 @@
+E:/JetBrains_Programs/CLionProjects/Learning_C/1_Calcolatrice/cmake-build-debug/CMakeFiles/1_Calcolatrice.dir
+E:/JetBrains_Programs/CLionProjects/Learning_C/1_Calcolatrice/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/JetBrains_Programs/CLionProjects/Learning_C/1_Calcolatrice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
