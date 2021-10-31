@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
+
 
 #define AndreaID = 0
 #define PaoloID = 1
@@ -21,7 +23,7 @@ char *whoIs(int id);
 
 void Extractor(Node *nodeUsr);
 
-int isIn(int array[], int x, int lenght);
+_Bool isIn(int array[], int x, int lenght);
 
 int main() {
     printf("************** ESTRATTORE REGALI DI NATALE ***************\n");
@@ -60,18 +62,18 @@ void Extractor(Node *nodeUsr) {
     int x = 999, i = 0;
     srand(time(0));
     int ext[4] = {999, 999, 999, 999};
-    int IsIn = 1;
+    _Bool IsIn = 1;
 
 
     while (nodeUsr != NULL) {
         do {
 
-            while (IsIn == 1) {
+            while (IsIn == true) {
                 x = rand() % (sizeof ext / sizeof *ext);
                 IsIn = isIn(ext, x, 4);
                 //   printf("2");
             }
-            IsIn = 1;
+            IsIn = true;
             //printf("1");
         } while (!(x != nodeUsr->id && x != nodeUsr->old_ass));
 
@@ -87,14 +89,14 @@ void Extractor(Node *nodeUsr) {
     }
 }
 
-int isIn(int array[], int x, int lenght) {
+_Bool isIn(int array[], int x, int lenght) {
 
     for (int z = 0; z < lenght; z++) {
         if (array[z] == x) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 void print_list(Node *head) {

@@ -1,4 +1,4 @@
-# Install script for directory: E:/JetBrains_Programs/CLionProjects/Learning_C/untitled
+# Install script for directory: E:/JetBrains_Programs/CLionProjects/Learning_C/2_EstrattoreWilson
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/JetBrains_Programs/CLionProjects/Learning_C/untitled/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/JetBrains_Programs/CLionProjects/Learning_C/2_EstrattoreWilson/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
