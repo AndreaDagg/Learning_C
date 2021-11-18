@@ -4,7 +4,7 @@
 
 int main()
 {
-    bool check = false;
+    bool check = true;
     //_Bool check = true; 
 
     if (check)
